@@ -12,12 +12,12 @@ function HomeScreen({ navigation }) {
         <Text style={styles.title}>Миний ертөнцөд тавтай морил</Text>
       </View>
       <View style={styles.content}>
-        <TouchableOpacity style={[styles.button, { backgroundColor: '#FF6F61' }]} onPress={() => navigation.navigate('Миний тухай')}>
-        <Image source={require("./assets/bilguun.png")} style={styles.buttonImage} />
+        <TouchableOpacity style={[styles.button, { backgroundColor: '#EF961B' }]} onPress={() => navigation.navigate('Миний тухай')}>
+        <Image source={require("./assets/favicon.png")} style={styles.buttonImage} />
           <Text style={styles.buttonText}>Миний тухай</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button, { backgroundColor: '#6B5B95' }]} onPress={() => navigation.navigate('Мэргэжил')}>
-        <Image source={require('./assets/bilguun.png')} style={styles.buttonImage} />
+        <TouchableOpacity style={[styles.button, { backgroundColor: '#E4B612' }]} onPress={() => navigation.navigate('Мэргэжил')}>
+        <Image source={require('./assets/favicon.png')} style={styles.buttonImage} />
           <Text style={styles.buttonText}>Мэргэжил</Text>
         </TouchableOpacity>
       </View>
@@ -45,8 +45,8 @@ function ContactScreen() {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
+    <NavigationContainer >
+      <Stack.Navigator style={styles.footer}>
         <Stack.Screen name="Нүүр" component={HomeScreen} />
         <Stack.Screen name="Миний тухай" component={AboutScreen} />
         <Stack.Screen name="Мэргэжил" component={ContactScreen} />
@@ -58,14 +58,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F7CAC9',
+    backgroundColor: '#61C3DC',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  footer: {
+    backgroundColor: '#61C3DC',
+    color: '#fff',
+  },
   header: {
-    backgroundColor: '#F7CAC9',
+    backgroundColor: '#61C3DC',
     borderBottomWidth: 2,
-    borderBottomColor: '#A7A7A7',
+    borderBottomColor: '#fff',
     padding: 20,
     width: '100%',
     alignItems: 'center',
@@ -78,7 +82,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#6B5B95',
+    color: '#FFF',
   },
   button: {
     flexDirection: 'row',
@@ -95,8 +99,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   buttonImage: {
-    width: 5,
-    height: 5,
+    width: 25,
+    height: 25,
     marginRight: 10,
   },
 });
