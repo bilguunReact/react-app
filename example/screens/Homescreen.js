@@ -35,16 +35,17 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "red",
   },
-  second: {
-    backgroundColor: "blue",
-    borderRadius: 10,
-    height: 40,
-    width: 140,
-    color: "white",
-    fontSize: 54,
-    fontWeight: "bold",
+  second: { 
+  backgroundColor: '#007bff',
+  paddingHorizontal: 16,
+  paddingVertical: 8,
+  borderRadius: 8,
   },
   buttun: {
-  
-  }
+  color: 'white',
+  fontSize: 18,
+  fontWeight: 'bold',
+  textAlign: 'center',
+
+  },
 });
