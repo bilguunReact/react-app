@@ -13,7 +13,7 @@ export default function Hoyrdahi({ navigation }) {
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <View style={styles.second}>
-          <Button
+          <Button style={styles.buttun}
             title="Миний мэргэжил"
             onPress={() => navigation.navigate("Second")}
           />
@@ -36,6 +36,15 @@ const styles = StyleSheet.create({
     backgroundColor: "red",
   },
   second: {
-    
+    backgroundColor: "blue",
+    borderRadius: 10,
+    height: 40,
+    width: 140,
+    color: "white",
+    fontSize: 54,
+    fontWeight: "bold",
   },
+  buttun: {
+  
+  }
 });
