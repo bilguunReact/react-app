@@ -7,11 +7,11 @@ import { StackActions } from "@react-navigation/native";
         <View style={styles.container}>
          <Text>{greeting}</Text>
          <Button 
-            title="Go to third screen "
+            title="Гурав дахь нүүр "
             onPress={() => navigation.push("Guravdahi")}
          />
           <Button 
-            title="Go to third screen hamt shuu"
+            title="Гурав дахь нүүр дахин"
             onPress={() => {
                  navigation.dispatch(
                     StackActions.replace('Guravdahi')

@@ -5,8 +5,8 @@ import { Button, StyleSheet, Text, View } from "react-native"
         return (
         <View style={styles.container}>
          <Text>Гурав</Text>
-         <Button title="pop to root" onPress={() => navigation.popToTop()}/>
-         <Button title="pop" onPress={() => navigation.pop()}/>
+         <Button title="Нүүр" onPress={() => navigation.popToTop()}/>
+         <Button title="Мэргэжил" onPress={() => navigation.pop()}/>
          <StatusBar style="auto"/>
         </View> 
     )
