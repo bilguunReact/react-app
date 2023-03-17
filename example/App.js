@@ -86,6 +86,10 @@ const styles = StyleSheet.create({
   bookName: {
 
   },
+  nom: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 
 
 });
