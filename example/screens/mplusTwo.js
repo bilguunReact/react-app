@@ -7,11 +7,12 @@ import {
   Text,
   View,
   Image,
+  Pressable
 } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
-export default function App({greeting}) {
+export default function App({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.srcollbain}>
@@ -37,16 +38,19 @@ export default function App({greeting}) {
           </View>
         </View>
         <View style={styles.nom}>
-          <Image source={require('../example/assets/1521804401-13464317.jpg')}
-                 style={styles.zurag} ></Image>
+          <Image
+            source={require("../assets/1521804401-13464317.jpg")}
+            style={styles.zurag}
+          ></Image>
           <Text style={styles.bookName}>Алхимч</Text>
         </View>
         <View style={styles.zohiagch}>
-          <Image source={require('../example/assets/1521804401-13464317.jpg')}
-                 style={styles.prozurag}></Image>
+          <Image
+            source={require("../assets/1521804401-13464317.jpg")}
+            style={styles.prozurag}
+          ></Image>
           <Text style={styles.porname}> Bilguun</Text>
-         <StatusBar style="auto"/>
-
+          <StatusBar style="auto" />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -59,47 +63,47 @@ const styles = StyleSheet.create({
     backgroundColor: "#4C4C4C",
   },
   roooow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   huwaaltsah: {
     borderRadius: 5,
-    backgroundColor: 'black',
+    backgroundColor: "black",
     width: 40,
     height: 40,
     margin: 30,
   },
   share: {
-    textAlign: 'center',
+    textAlign: "center",
     alignItems: "center",
     justifyContent: "space-around",
   },
   sharetwo: {
-    textAlign: 'center',
+    textAlign: "center",
     alignItems: "center",
     justifyContent: "space-around",
   },
   huwaahtwo: {
     borderRadius: 5,
-    backgroundColor: 'black',
+    backgroundColor: "black",
     width: 40,
     height: 40,
     margin: 30,
-  }, 
+  },
   zurag: {
     width: 200,
     height: 310,
     borderRadius: 20,
   },
   bookName: {
-    color: 'white',
-    fontWeight:'bold',
+    color: "white",
+    fontWeight: "bold",
     fontSize: 25,
     margin: 10,
   },
   nom: {
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   prozurag: {
     width: 30,
@@ -107,12 +111,11 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   porname: {
-    color: '#868686',
-  }, 
+    color: "#868686",
+  },
   zohiagch: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
 });
