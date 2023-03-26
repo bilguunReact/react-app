@@ -9,7 +9,6 @@ export default function App() {
             <ScrollView style={styles.srcollbain}>
                 <View style={styles.greeting}>
                     <Text style={styles.ogloo}>Өглөөний мэнд</Text>
-                    <Text style={styles.ogloomassage}></Text>
                     <Text style={styles.neglogo}>&#128512;</Text>
                     <Text style={styles.hoyrlogo}>&#128157;</Text>
                     <Text style={styles.guravlogo}>&#128293;</Text>
