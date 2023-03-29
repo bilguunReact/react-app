@@ -1,5 +1,4 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
 import {
   SafeAreaView,
   ScrollView,
@@ -12,7 +11,7 @@ import {
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
-export default function App({ navigation }) {
+export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.srcollbain}>
@@ -50,7 +49,6 @@ export default function App({ navigation }) {
             style={styles.prozurag}
           ></Image>
           <Text style={styles.porname}> Bilguun</Text>
-          <StatusBar style="auto" />
         </View>
       </ScrollView>
     </SafeAreaView>

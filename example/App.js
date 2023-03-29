@@ -9,21 +9,11 @@ import {
 } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { StatusBar } from "expo-status-bar";
-import { mplusTwo } from "../example/screens/mplusTwo";
 
-const Stack = createNativeStackNavigator();
 
 export default function App () {
   return (
     <SafeAreaView style={styles.container}>
-        <NavigationContainer>
-          <Stack.Navigator >
-            <Stack.Screen name="App" component={mplusTwo} />
-          </Stack.Navigator>
-        </NavigationContainer>
       <ScrollView style={styles.srcollbain}>
       
 
@@ -65,7 +55,6 @@ export default function App () {
             source={require("../example/assets/1521804401-13464317.jpg")}
             style={styles.book}
           ></Image>
-          <StatusBar style="auto" />
         </View>
       </ScrollView>
     </SafeAreaView>
