@@ -1,5 +1,4 @@
 import React from "react";
-import { StatusBar } from "expo-status-bar";
 import {
   SafeAreaView,
   ScrollView,
@@ -12,12 +11,7 @@ import {
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
-export default function App({navigation}) {
-  const textWorkPressed = () => {
-    navigation.navigate("Homescreen");
-};
-
-
+export default function Home () {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.srcollbain}>
