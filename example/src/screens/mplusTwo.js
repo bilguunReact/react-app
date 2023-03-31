@@ -11,13 +11,14 @@ import {
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
-export default function Home () {
+export default function Two ( {navigation}) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.srcollbain}>
         <View style={styles.roooow}>
+       
           <View style={styles.huwaaltsah}>
-            <Text>{greeting}</Text>
+            <Text></Text>
             <FontAwesome5
               style={styles.share}
               name="caret-left"

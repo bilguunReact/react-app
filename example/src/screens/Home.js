@@ -6,12 +6,14 @@ import {
   Text,
   View,
   Image,
+  Pressable,
 } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
 
-export default function Home () {
+
+export default function App ({ navigation}) {
    return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.srcollbain}>
@@ -26,6 +28,11 @@ export default function Home () {
         </View>
         <View style={styles.tomView}>
           <View style={styles.neg}>
+          <Pressable
+              onPress={() => {
+                navigation.navigate("Two");
+              }}
+            >
             <Text style={styles.ner}>Товч ном</Text>
             <FontAwesome5
               name="caret-left"
@@ -33,7 +40,9 @@ export default function Home () {
               color="white"
               paddingTop={5}
             />
+            </Pressable>
           </View>
+          
           <View style={styles.hoyr}>
             <Text style={styles.ner}>Цахим ном</Text>
             <Ionicons name="" size={30} color="white" paddingTop={5} />
@@ -52,7 +61,7 @@ export default function Home () {
           <Text style={styles.deed}>Алхимч</Text>
           <Text style={styles.dood}>Энэ 7 хоногийн онцлох</Text>
           <Image
-            source={require("../example/assets/1521804401-13464317.jpg")}
+            source={require("../../assets/1521804401-13464317.jpg")}
             style={styles.book}
           ></Image>
         </View>
