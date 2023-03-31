@@ -12,7 +12,12 @@ import {
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
-export default function App({ navigation }) {
+export default function App({navigation}) {
+  const textWorkPressed = () => {
+    navigation.navigate("Homescreen");
+};
+
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.srcollbain}>
@@ -38,6 +43,8 @@ export default function App({ navigation }) {
           </View>
         </View>
         <View style={styles.nom}>
+          <Pressable onPress={() => {textWorkPressed();
+          }}/>
           <Image
             source={require("../assets/1521804401-13464317.jpg")}
             style={styles.zurag}
@@ -50,7 +57,6 @@ export default function App({ navigation }) {
             style={styles.prozurag}
           ></Image>
           <Text style={styles.porname}> Bilguun</Text>
-          <StatusBar style="auto" />
         </View>
       </ScrollView>
     </SafeAreaView>
