@@ -37,17 +37,15 @@ export default function Home () {
           </View>
         </View>
         <View style={styles.nom}>
-          <Pressable onPress={() => {textWorkPressed();
-          }}/>
           <Image
-            source={require("../assets/1521804401-13464317.jpg")}
+            source={require('../../assets/1465569.png')}
             style={styles.zurag}
           ></Image>
           <Text style={styles.bookName}>Алхимч</Text>
         </View>
         <View style={styles.zohiagch}>
           <Image
-            source={require("../assets/1521804401-13464317.jpg")}
+            source={require("../../assets/1521804401-13464317.jpg")}
             style={styles.prozurag}
           ></Image>
           <Text style={styles.porname}> Bilguun</Text>

@@ -12,7 +12,7 @@ import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { StatusBar } from "expo-status-bar";
-import { mplusTwo } from "../example/screens/mplusTwo";
+import { mplusTwo } from "../example/src/screens/mplusTwo";
 
 const Stack = createNativeStackNavigator();
 
