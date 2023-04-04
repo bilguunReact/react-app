@@ -6,19 +6,22 @@ import {
   Text,
   View,
   Image,
-  Pressable
+  Pressable,
+  Button,
+  Touchable
 } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
-export default function Two ( {navigation}) {
+export default function Two ({navigation}) {
+  const buumed = () => {
+    navigation.navigate("bbbb");
+  };
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.srcollbain}>
         <View style={styles.roooow}>
-       
-          <View style={styles.huwaaltsah}>
-            <Text></Text>
+          <Pressable onPress={() => navigation.popToTop()} style={styles.huwaaltsah}>
             <FontAwesome5
               style={styles.share}
               name="caret-left"
@@ -26,10 +29,16 @@ export default function Two ( {navigation}) {
               color="white"
               paddingTop={5}
             />
-          </View>
+            <Pressable
+        onPress={() => {
+          buumed();
+        }}
+      >
+      </Pressable>
+          </Pressable>
           <View style={styles.huwaahtwo}>
             <FontAwesome5
-              style={styles.sharetwo}
+              style={styles.share}
               name="caret-left"
               size={28}
               color="white"
@@ -39,7 +48,7 @@ export default function Two ( {navigation}) {
         </View>
         <View style={styles.nom}>
           <Image
-            source={require('../../assets/1465569.png')}
+            source={require('../../assets/1521804401-13464317.jpg')}
             style={styles.zurag}
           ></Image>
           <Text style={styles.bookName}>Алхимч</Text>
@@ -63,7 +72,7 @@ const styles = StyleSheet.create({
   },
   roooow: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
   },
   huwaaltsah: {
     borderRadius: 5,
@@ -73,11 +82,6 @@ const styles = StyleSheet.create({
     margin: 30,
   },
   share: {
-    textAlign: "center",
-    alignItems: "center",
-    justifyContent: "space-around",
-  },
-  sharetwo: {
     textAlign: "center",
     alignItems: "center",
     justifyContent: "space-around",
