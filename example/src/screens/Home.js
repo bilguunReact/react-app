@@ -29,23 +29,20 @@ export default function App ({ navigation}) {
         <View style={styles.tomView}>
           <View style={styles.neg}>
           <Pressable
-              onPress={() => {
-                navigation.navigate("Two");
-              }}
-            >
+              onPress={() => {navigation.navigate("Two"); }} >
             <Text style={styles.ner}>Товч ном</Text>
-            <FontAwesome5
-              name="caret-left"
-              size={40}
-              color="white"
-              paddingTop={5}
-            />
+            <FontAwesome5 name="caret-left" size={40} color="white" paddingTop={5} />
             </Pressable>
           </View>
           
           <View style={styles.hoyr}>
+          <Pressable 
+              onPress={() => {
+                navigation.navigate("Towch");
+            }} >
             <Text style={styles.ner}>Цахим ном</Text>
-            <Ionicons name="" size={30} color="white" paddingTop={5} />
+            <Ionicons name="rocket" size={30} color="white" paddingTop={5} />
+            </Pressable>
           </View>
           <View style={styles.gurav}>
             <Text style={styles.ner}>Аудио ном</Text>
@@ -151,6 +148,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginBottom: 2,
     color: "white",
+    textTransform: 'uppercase',
   },
   dood: {
     margin: 5,
