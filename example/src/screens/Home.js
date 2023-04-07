@@ -37,9 +37,7 @@ export default function App ({ navigation}) {
           
           <View style={styles.hoyr}>
           <Pressable 
-              onPress={() => {
-                navigation.navigate("Towch");
-            }} >
+              onPress={() => { navigation.navigate("Towch"); }} >
             <Text style={styles.ner}>Цахим ном</Text>
             <Ionicons name="rocket" size={30} color="white" paddingTop={5} />
             </Pressable>
