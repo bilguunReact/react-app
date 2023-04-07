@@ -43,8 +43,11 @@ export default function App ({ navigation}) {
             </Pressable>
           </View>
           <View style={styles.gurav}>
+          <Pressable 
+              onPress={() => { navigation.navigate("AimagDetail"); }} >
             <Text style={styles.ner}>Аудио ном</Text>
             <Ionicons name="rocket" size={30} color="white" paddingTop={5} />
+            </Pressable>
           </View>
           <View style={styles.dorov}>
             <Text style={styles.ner}>Подкаст</Text>
