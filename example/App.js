@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
    <NavigationContainer>
-    <Stack.Navigator initialRouteName='AimagList' 
+    <Stack.Navigator initialRouteName='Home' 
     screenOptions={{headerShown: false}}> 
       <Stack.Screen name="Nuur"  component={Home}/>
       <Stack.Screen name="Two" component={MplusTwo}/>
