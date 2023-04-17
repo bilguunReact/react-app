@@ -29,12 +29,12 @@ export default function Two ({navigation}) {
               color="white"
               paddingTop={5}
             />
-            <Pressable
+            {/* <Pressable
         onPress={() => {
           buumed();
         }}
       >
-      </Pressable>
+      </Pressable> */}
           </Pressable>
           <View style={styles.huwaahtwo}>
             <FontAwesome5
