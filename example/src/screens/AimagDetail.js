@@ -9,7 +9,7 @@ export default function AimagDetail({navigation}) {
       <ScrollView>
         <View>
         <Pressable onPress={() => {AimagDetail(); }} style={styles.huwaaltsah}>
-        <Text style={styles.ner}>Товч ном</Text>
+        <Text style={styles.ner}>Товч ном Ainag Detial</Text>
           </Pressable>
         </View>
       </ScrollView>
