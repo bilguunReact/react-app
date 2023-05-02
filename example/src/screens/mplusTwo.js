@@ -29,12 +29,6 @@ export default function Two ({navigation}) {
               color="white"
               paddingTop={5}
             />
-            {/* <Pressable
-        onPress={() => {
-          buumed();
-        }}
-      >
-      </Pressable> */}
           </Pressable>
           <View style={styles.huwaahtwo}>
             <FontAwesome5
